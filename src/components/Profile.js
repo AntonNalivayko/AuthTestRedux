@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 
 
-const Users = () => {
+const Profile = () => {
 
     /***************** Redux Hook ******************/
     const userName = useSelector(state => state.auth.user);
@@ -22,4 +22,4 @@ const Users = () => {
     )
 };
 
-export default Users;
+export default Profile;

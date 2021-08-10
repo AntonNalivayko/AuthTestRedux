@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Users, Login } from './components';
+import { Profile, Login } from './components';
 
 
 
@@ -12,7 +12,7 @@ const App = () => {
             <Router>
                     <Switch>
                         <Route exact path='/' component={Login} /> 
-                        <Route exact path='/profile' component={Users} />
+                        <Route exact path='/profile' component={Profile} />
                     </Switch>
             </Router>
         </>
