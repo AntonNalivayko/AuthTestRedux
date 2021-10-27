@@ -24,6 +24,8 @@ const Login = ({ saveName }) => {
     useEffect(() => {
         if(loginCompare === true) {
             setDisable(false)
+        } else {
+            setDisable(true)
         } 
     }, [formData]);
 
@@ -37,13 +39,13 @@ const Login = ({ saveName }) => {
     };
 
     return (
-        <div className='container mt-5'>
+        <div className='container mt-5 p-5 rounded shadow' style={{width: '30%', backgroundColor: '#f6f6f6'}}>
             <h1>Sign In</h1>
             <p>Sign into your Account</p>
             <form onSubmit={e => onSubmit(e)}>
                 <div className='form-group'>
                     <input
-                        className='form-control'
+                        className='form-control shadow'
                         type='username'
                         placeholder='username'
                         name='username'
@@ -54,7 +56,7 @@ const Login = ({ saveName }) => {
                 </div>
                 <div className='form-group'>
                     <input
-                        className='form-control'
+                        className='form-control shadow'
                         type='password'
                         placeholder='Password'
                         name='password'
@@ -66,7 +68,7 @@ const Login = ({ saveName }) => {
                 </div>
                
                <Link to='/profile'><button to='/profile' 
-                className='btn btn-primary' 
+                className='btn btn-primary shadow' 
                 type='submit' 
                 onFocus={onSubmit} 
                 disabled={disable}>Login</button></Link>

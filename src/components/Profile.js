@@ -13,7 +13,7 @@ const Profile = () => {
     return (
 
                 <div className='container'>
-                    <div class='jumbotron mt-5'>
+                    <div class='jumbotron mt-5 shadow'>
                         <h5 class='lead'>Profile Page </h5>
                         <h1 class='display-4'>Hello, {userName} !</h1>
                         <hr class='my-4' /> 
